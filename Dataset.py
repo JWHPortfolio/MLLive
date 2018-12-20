@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.preprocessing import StandardScaler
+import pickle
 
 class Dataset:
     def __init__(self):
@@ -59,9 +60,16 @@ class Dataset:
 
         sc = StandardScaler()
         dataset = sc.fit_transform(dataset)
+        
+        # save scaler to later reverse transform
+        filenameBase = 'data/ML' + extension
+        
+        filename = filenameBase + '.pkl'
+        with open(filename, 'wb') as f:
+            pickle.dump(sc, f, pickle.HIGHEST_PROTOCOL)
 
         #save data
-        fileName = "data/ML"+ extension + ".npy"
+        fileName = filenameBase +".npy"
         np.save(fileName, dataset)
 
         #datasetNew = np.load('data/MachineLine2.npy')

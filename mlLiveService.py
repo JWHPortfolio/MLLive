@@ -10,12 +10,12 @@ def ingest():
     dataIndependent = data.dataSelection( selectionString=independentVar)
 
     dependentVar = request.args.get('dependent')
-    '''
+    
     if not dependentVar :
         dependentVar = "Nothing"
     else:
-        dataDependent = data.dataSelection( selectionString=dependentVar)
-    '''
+        dataDependent = data.dataSelection( selectionString=dependentVar, extension="dependent")
+    
 
     message = "I: " + independentVar + " D: " + dependentVar
 

@@ -8,7 +8,7 @@ class Dataset:
     def __init__(self):
         self.dataset = pd.read_csv('data/survey.csv')
         
-    def dataSelection(self, selectionString="2,1,3" ):     
+    def dataSelection(self, selectionString="2,1,3", extension="independent" ):     
 
         # get rid of leading columns
         dataset = self.dataset.iloc[1:,10:].values
@@ -24,7 +24,7 @@ class Dataset:
         for i in reversed(range(0,length)):
            if i not in iSet:
             dataset = np.delete(dataset,i,1)
-
+        print("LENGTH: ", len(dataset))
         #change categorical data to 1/0 columns
         labelencoder = LabelEncoder()
         catFeatures = {}
@@ -44,15 +44,15 @@ class Dataset:
         catFeaturesArray = []
         for key, value in catFeatures.items():
             catFeaturesArray.append(key)
-        onehotencoder = OneHotEncoder(categorical_features = catFeaturesArray)
-        dataset = onehotencoder.fit_transform(dataset).toarray()
+            onehotencoder = OneHotEncoder(categorical_features = catFeaturesArray)
+            dataset = onehotencoder.fit_transform(dataset).toarray()
 
         #must delete one column for each categorical data set
         delCol = 0
         for key, value in catFeatures.items():
             dataset = np.delete(dataset, delCol, 1)
-        #adjusts for the disappearing column from above
-        delCol += value -1
+            #adjusts for the disappearing column from above
+            delCol += value -1
 
         # Must scale the data
         # Feature Scaling
@@ -61,17 +61,18 @@ class Dataset:
         dataset = sc.fit_transform(dataset)
 
         #save data
-        np.save('data/MachineLine2.npy', dataset)
+        fileName = "data/ML"+ extension + ".npy"
+        np.save(fileName, dataset)
 
-        datasetNew = np.load('data/MachineLine2.npy')
+        #datasetNew = np.load('data/MachineLine2.npy')
 
-        if( np.array_equal(dataset, datasetNew)):
-            message = "Exact Copy"
-            return dataset
-        else:
-            message = "Incorrect Data Copy"
-            return -1
+        #if( np.array_equal(dataset, datasetNew)):
+            #message = "Exact Copy"
+            #return dataset
+        #else:
+            #message = "Incorrect Data Copy"
+        return dataset
             
       
-
-
+#d = Dataset()
+#datas = d.dataSelection(selectionString = '1')

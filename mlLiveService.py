@@ -10,7 +10,8 @@ def ingest():
     dataIndependent = data.dataSelection( selectionString=independentVar)
 
     dependentVar = request.args.get('dependent')
-    
+    print('ind___',independentVar)
+    print('dep___', dependentVar)
     if not dependentVar :
         dependentVar = "Nothing"
     else:

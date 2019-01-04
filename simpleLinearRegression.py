@@ -9,6 +9,14 @@ X = np.load('data/MLindependent.npy')
 
 y = np.load('data/MLdependent.npy')
 
+XNames = np.load('data/MLindependentNames.npy')
+yNames = np.load('data/MLdependentNames.npy')
+
+for name in XNames:
+    print("I: ", name)
+for name in yNames:
+    print("D: ", name)
+
 #Splitting the data set into training and test set
 from sklearn.cross_validation import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size =1/3, random_state = 0)
@@ -39,6 +47,6 @@ plt.ylabel("Salary")
 plt.show()
 
 
-sc = StandardScaler()
-datasetUS = sc.inverse_transform(X)
-datasetUS
+#sc = StandardScaler()
+#datasetUS = sc.inverse_transform(X)
+#datasetUS

@@ -10,12 +10,22 @@ class Dataset:
         self.dataset = pd.read_csv('data/survey.csv')
         
     def dataSelection(self, selectionString="2,1,3", extension="independent" ):     
+        
 
         # get rid of leading columns
         dataset = self.dataset.iloc[1:,10:].values
 
         #breakup set
         selArray = selectionString.split(",")
+        
+        # get names
+        names = self.dataset.iloc[0:1,10:].values
+        namesArray = []
+        
+        for i in selArray:
+            print(names[0,int(i)])
+            namesArray.append(names[0, int(i)])
+            
 
         #change to set of integers (no repeats) in reverse order
         iSet = set()
@@ -71,6 +81,12 @@ class Dataset:
         #save data
         fileName = filenameBase +".npy"
         np.save(fileName, dataset)
+        
+        #save names
+        fileName = filenameBase + "Names.npy"
+        #convert to numpy array
+        namesNP = np.array(namesArray)
+        np.save(fileName,namesNP)
 
         #datasetNew = np.load('data/MachineLine2.npy')
 

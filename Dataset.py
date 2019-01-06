@@ -22,9 +22,11 @@ class Dataset:
         names = self.dataset.iloc[0:1,10:].values
         namesArray = []
         
+        nameCount = 0
         for i in selArray:
             print(names[0,int(i)])
             namesArray.append(names[0, int(i)])
+            nameCount += 1
             
 
         #change to set of integers (no repeats) in reverse order
@@ -67,16 +69,18 @@ class Dataset:
 
         # Must scale the data
         # Feature Scaling
-
-        sc = StandardScaler()
-        dataset = sc.fit_transform(dataset)
         
-        # save scaler to later reverse transform
         filenameBase = 'data/ML' + extension
+       
+        if( nameCount > 1): #Onlyc need to scale when there is more than one feature
+            sc = StandardScaler()
+            dataset = sc.fit_transform(dataset)
         
-        filename = filenameBase + '.pkl'
-        with open(filename, 'wb') as f:
-            pickle.dump(sc, f, pickle.HIGHEST_PROTOCOL)
+            # save scaler to later reverse transform
+         
+            filename = filenameBase + '.pkl'
+            with open(filename, 'wb') as f:
+                pickle.dump(sc, f, pickle.HIGHEST_PROTOCOL)
 
         #save data
         fileName = filenameBase +".npy"

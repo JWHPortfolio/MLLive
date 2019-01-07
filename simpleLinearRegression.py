@@ -10,7 +10,7 @@ X = np.load('data/MLindependent.npy')
 y = np.load('data/MLdependent.npy')
 
 XNames = np.load('data/MLindependentNames.npy')
-yNames = np.load('data/MLdependentNames.npy')
+yNames = np.load('data/MLdependentNames.npy')54r
 
 for name in XNames:
     print("I: ", name)

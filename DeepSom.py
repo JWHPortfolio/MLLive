@@ -32,3 +32,7 @@ for i, x in enumerate(X):
          markeredgewidth = 2)
 '''
 show()
+'
+#get probablities'
+
+print( som.distance_map())

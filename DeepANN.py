@@ -10,7 +10,7 @@ X = np.load('data/MLindependent.npy')
 y = np.load('data/MLdependent.npy')
 #y = y.tolist()
 
-y = y.reshape(58,)
+y = y.reshape(len(y),)
 y = y.astype(int)
 
 XNames = np.load('data/MLindependentNames.npy')
@@ -35,10 +35,11 @@ classifier = Sequential()
 #output_dim starts out as number of inputs + number of outputs which is 12/2 = 6
 #init is a function that populates random numbers close to zero - uniform using uniform distribution
 # input_dim is number of independent variables
-classifier.add(Dense(output_dim = 6, init = 'uniform', activation = 'relu', input_dim = inputDim))
+output_dim = (inputDim+outputDim)
+classifier.add(Dense(output_dim, init = 'uniform', activation = 'relu', input_dim = inputDim))
 
 # Adding the second hidden layer
-classifier.add(Dense(output_dim = 6, init = 'uniform', activation = 'relu'))
+classifier.add(Dense(output_dim, init = 'uniform', activation = 'relu'))
 
 # Adding the output layer
 # the following is only for 1 output.  If more than 1 change output_dim accordinly and activation = "softmax"
@@ -49,7 +50,7 @@ classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = [
 
 # Fitting the ANN to the Training set
 # batch size and number of epochs are "art" - try one and then rerun
-classifier.fit(X_train, y_train, batch_size = 10, nb_epoch = 20)
+classifier.fit(X_train, y_train, batch_size = 5, nb_epoch = 100)
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
@@ -59,3 +60,5 @@ y_pred = (y_pred > 0.5)
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 print (cm)
+# % correct
+print((cm[0,0]+cm[1,1])/sum(sum(cm)))

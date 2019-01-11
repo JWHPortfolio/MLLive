@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+#NEEDS 2 REGRESSIVE FEATURES and 1 yes/no output to graph
 
 # Importing the dataset
 
@@ -9,7 +10,7 @@ X = np.load('data/MLindependent.npy')
 y = np.load('data/MLdependent.npy')
 #y = y.tolist()
 
-y = y.reshape(58,)
+y = y.reshape(len(y),)
 y = y.astype(int)
 
 XNames = np.load('data/MLindependentNames.npy')
@@ -30,6 +31,8 @@ y_pred = classifier.predict(X_test)
 # Making the Confusion Matrix
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
+#Percent correct
+print((cm[0,0]+cm[1,1])/sum(sum(cm)))
 
 
 # Visualising the Training set results

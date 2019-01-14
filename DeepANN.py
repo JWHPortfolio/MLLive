@@ -6,6 +6,7 @@ import pandas as pd
 import sklearn
 
 X = np.load('data/MLindependent.npy')
+inputDim = X.shape[1]
 
 y = np.load('data/MLdependent.npy')
 #y = y.tolist()
@@ -14,7 +15,7 @@ y = y.reshape(len(y),)
 y = y.astype(int)
 
 XNames = np.load('data/MLindependentNames.npy')
-inputDim = len(XNames)
+#inputDim = len(XNames)
 yNames = np.load('data/MLdependentNames.npy')
 outputDim = len(yNames)
 

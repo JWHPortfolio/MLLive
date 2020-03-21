@@ -2,11 +2,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 
+# All Features - Coding and Exercise
 
 import pandas as pd
 
-X = np.load('data/MLindependent.npy')
-XNames = np.load('data/MLindependentNames.npy')
+X = np.load('data/MLindependent.npy',allow_pickle = True)
+XNames = np.load('data/MLindependentNames.npy',allow_pickle = True)
 
 #using elbow method to determine number of clusters
 from sklearn.cluster import KMeans
@@ -27,9 +28,9 @@ plt.show()
 kmeans = KMeans(n_clusters = 3, init = 'k-means++', max_iter=300, n_init = 10, random_state = 0)
 y_kmeans = kmeans.fit_predict(X)
 
-plt.scatter(X[y_kmeans == 0,0], X[y_kmeans == 0,1], s = 100, c = 'red', label = 'Lazy')
-plt.scatter(X[y_kmeans == 1,0], X[y_kmeans == 1,1], s = 100, c = 'blue', label = 'Studius')
-plt.scatter(X[y_kmeans == 2,0], X[y_kmeans == 2,1], s = 100, c = 'green', label = 'Athlete')
+plt.scatter(X[y_kmeans == 0,0], X[y_kmeans == 0,1], s = 100, c = 'red', label = 'Studius')
+plt.scatter(X[y_kmeans == 1,0], X[y_kmeans == 1,1], s = 100, c = 'blue', label = 'Lazy')
+plt.scatter(X[y_kmeans == 2,0], X[y_kmeans == 2,1], s = 100, c = 'green', label = 'Athelete')
 plt.scatter(kmeans.cluster_centers_[:,0], kmeans.cluster_centers_[:,1], s=300, c = 'yellow', label = 'Centroids')
 plt.title('Clusters')
 plt.xlabel(XNames[0])

@@ -5,19 +5,19 @@ import pandas as pd
 
 # Importing the dataset
 
-X = np.load('data/MLindependent.npy')
+X = np.load('data/MLindependent.npy',allow_pickle = True)
 
-y = np.load('data/MLdependent.npy')
+y = np.load('data/MLdependent.npy',allow_pickle = True)
 #y = y.tolist()
 
 y = y.reshape(len(y),)
 y = y.astype(int)
 
-XNames = np.load('data/MLindependentNames.npy')
-yNames = np.load('data/MLdependentNames.npy')
+XNames = np.load('data/MLindependentNames.npy',allow_pickle = True)
+yNames = np.load('data/MLdependentNames.npy',allow_pickle = True)
 
 # Splitting the dataset into the Training set and Test set
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)
 
 # Fitting classifier to the Training set

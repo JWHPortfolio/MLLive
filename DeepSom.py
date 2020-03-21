@@ -4,8 +4,8 @@ import pandas as pd
 
 # Importing the dataset
 
-X = np.load('data/MLindependent.npy')
-XNames = np.load('data/MLindependentNames.npy')
+X = np.load('data/MLindependent.npy',allow_pickle = True)
+XNames = np.load('data/MLindependentNames.npy',allow_pickle = True)
 
 # Training the SOM
 from minisom import MiniSom

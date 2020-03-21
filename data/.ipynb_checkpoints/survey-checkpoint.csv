@@ -1,10 +1,84 @@
-﻿Question,"","","","","","","","","",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
-session_ID,Email,First Name,Last Name,CustomA,CustomB,Start Time,End Time,Duration,IP Address,What movie genre is your favorite?,Are you a dog person or a cat person,What is your preferred Operating System?,Do you prefer activities on your own or with others?,Star Wars or Star Trek?,Are you a good singer?,Do you nake wishes upon stars?,Do you play a musical instrument?,"On average, how many hours per day do you spend on the internet?","On average, how many hours per week do you spend coding?","On average, how many hours each week do you exercise?","How many meetups, of any kind, did you attend last year (2018)? Please enter 0 for none.",How many on-line courses have you taken?  Please enter 0 for none?,Do you own a small single-board computer such as a raspberry pi?,What is your age group?
-14504456,"","","","","",2018-12-03 01:19:00,2018-12-03 01:20:00,00:01:00,"",Science Fiction,Cat Person,Windows,With Others,Star Trek,Yes,No,Yes,4,15,1,10,2,No,30 to 45 Years Old
-14504491,"","","","","",2018-12-03 02:10:00,2018-12-03 02:11:00,00:01:00,"",Science Fiction,Dog Person,Windows,Individual (On my own),Star Wars,No,Yes,No,12,0,0,11,2,No,30 to 45 Years Old
-14506542,"","","","","",2018-12-03 16:45:00,2018-12-03 16:46:00,00:01:00,50.197.1.225,Science Fiction,Dog Person,Linux,Individual (On my own),Star Trek,No,Yes,No,3,20,16,6,8,Yes,Over 45 Years Old
-14506729,"","","","","",2018-12-03 17:40:00,2018-12-03 17:43:00,00:03:00,"",Science Fiction,Dog Person,Windows,Individual (On my own),Star Trek,Yes,Yes,Yes,10,45,2,8,15,No,30 to 45 Years Old
-14506739,"","","","","",2018-12-03 17:45:00,2018-12-03 17:46:00,00:01:00,205.128.239.62,Comedy,Cat Person,Linux,With Others,Star Trek,Yes,Yes,No,30,40,5,30,5,No,Less than 30 Years Old
-14516846,"","","","","",2018-12-07 03:13:00,2018-12-07 03:15:00,00:02:00,73.135.248.193,Adventure,Dog Person,Linux,With Others,Star Wars,Yes,Yes,Yes,10,10,8,12,2,Yes,Over 45 Years Old
-14521133,"","","","","",2018-12-09 18:22:00,2018-12-09 18:24:00,00:02:00,71.244.148.132,Romance,Dog Person,Linux,Individual (On my own),Star Trek,Yes,No,Yes,1,40,5,6,5,No,Over 45 Years Old
-14531363,"","","","","",2018-12-13 23:10:00,2018-12-13 23:14:00,00:04:00,"",Adventure,Dog Person,Mac,With Others,Star Trek,No,Yes,No,6,1,4,3,40,No,Over 45 Years Old
+﻿Question,,,,,,,,,,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+session_ID,Email,First Name,Last Name,CustomA,CustomB,Start Time,End Time,Duration,IP Address,What movie genre is your favorite?,Are you a dog person or a cat person,What is your preferred Operating System?,Do you prefer activities on your own or with others?,Star Wars or Star Trek?,Are you a good singer?,Do you make wishes upon stars?,Do you play a musical instrument?,"On average, how many hours per day do you spend on the internet?","On average, how many hours per week do you spend coding?","On average, how many hours each week do you exercise?","How many meetups, of any kind, did you attend last year (2018)? Please enter 0 for none.",How many on-line courses have you taken?  Please enter 0 for none?,Do you own a small single-board computer such as a raspberry pi?,What is your age group?
+14504456,,,,,,12/3/18 1:19,12/3/18 1:20,0:01:00,,Science Fiction,Cat Person,Windows,With Others,Star Trek,Yes,No,Yes,4,15,1,10,2,No,30 to 45 Years Old
+14504491,,,,,,12/3/18 2:10,12/3/18 2:11,0:01:00,,Science Fiction,Dog Person,Windows,Individual (On my own),Star Wars,No,Yes,No,12,0,0,11,2,No,30 to 45 Years Old
+14506542,,,,,,12/3/18 16:45,12/3/18 16:46,0:01:00,50.197.1.225,Science Fiction,Dog Person,Linux,Individual (On my own),Star Trek,No,Yes,No,3,20,16,6,8,Yes,Over 45 Years Old
+14506729,,,,,,12/3/18 17:40,12/3/18 17:43,0:03:00,,Science Fiction,Dog Person,Windows,Individual (On my own),Star Trek,Yes,Yes,Yes,10,45,2,8,15,No,30 to 45 Years Old
+14506739,,,,,,12/3/18 17:45,12/3/18 17:46,0:01:00,205.128.239.62,Comedy,Cat Person,Linux,With Others,Star Trek,Yes,Yes,No,30,40,5,30,5,No,Less than 30 Years Old
+14516846,,,,,,12/7/18 3:13,12/7/18 3:15,0:02:00,73.135.248.193,Adventure,Dog Person,Linux,With Others,Star Wars,Yes,Yes,Yes,10,10,8,12,2,Yes,Over 45 Years Old
+14521133,,,,,,12/9/18 18:22,12/9/18 18:24,0:02:00,71.244.148.132,Romance,Dog Person,Linux,Individual (On my own),Star Trek,Yes,No,Yes,1,40,5,6,5,No,Over 45 Years Old
+14531363,,,,,,12/13/18 23:10,12/13/18 23:14,0:04:00,,Adventure,Dog Person,Mac,With Others,Star Trek,No,Yes,No,6,1,4,3,40,No,Over 45 Years Old
+14533970,,,,,,12/15/18 13:03,12/15/18 13:05,0:02:00,,Adventure,Dog Person,Android,Individual (On my own),Star Wars,No,Yes,No,6,1,4,8,12,No,30 to 45 Years Old
+14535559,,,,,,12/16/18 23:20,12/16/18 23:24,0:04:00,,Adventure,Dog Person,Linux,With Others,Star Wars,No,No,No,8,14,2,54,5,No,Over 45 Years Old
+14535568,,,,,,12/16/18 23:27,12/16/18 23:27,0:00:00,71.244.195.165,Comedy,Dog Person,Linux,With Others,Star Wars,No,No,No,30,50,4,20,20,Yes,30 to 45 Years Old
+14535588,,,,,,12/16/18 23:45,12/16/18 23:46,0:01:00,73.163.146.211,Comedy,Dog Person,Linux,Individual (On my own),Star Wars,No,No,Yes,7,30,10,3,5,Yes,30 to 45 Years Old
+14535629,,,,,,12/17/18 0:36,12/17/18 0:39,0:03:00,100.16.162.118,Adventure,Dog Person,Linux,Individual (On my own),Star Trek,Yes,No,Yes,3,5,3.5,2,5,Yes,30 to 45 Years Old
+14535688,,,,,,12/17/18 1:52,12/17/18 2:02,0:10:00,,Comedy,Dog Person,Windows,With Others,Star Wars,No,Yes,Yes,4,5,10,25,7,No,Less than 30 Years Old
+14537695,,,,,,12/17/18 21:12,12/17/18 21:14,0:02:00,,Comedy,Dog Person,Windows,With Others,Star Wars,No,No,Yes,6,30,5,0,1,Yes,Less than 30 Years Old
+14540249,,,,,,12/19/18 3:17,12/19/18 3:19,0:02:00,98.117.212.114,Adventure,Dog Person,Windows,With Others,Star Wars,No,Yes,No,2,20,2,1,5,No,30 to 45 Years Old
+14541300,,,,,,12/19/18 13:33,12/19/18 13:37,0:04:00,71.244.161.12,Horror,Dog Person,Linux,Individual (On my own),Star Trek,No,No,Yes,5,50,6,12,12,Yes,Over 45 Years Old
+14543861,,,,,,12/20/18 19:53,12/20/18 19:54,0:01:00,50.197.1.225,Science Fiction,Dog Person,Linux,Individual (On my own),Star Trek,No,Yes,No,3,20,10,5,13,Yes,Over 45 Years Old
+14545005,,,,,,12/21/18 18:16,12/21/18 18:19,0:03:00,128.29.43.3,Romance,Dog Person,Android,With Others,Star Trek,No,No,No,2,4,4,4,2,No,Over 45 Years Old
+14556443,,,,,,1/3/19 2:14,1/3/19 2:15,0:01:00,,Horror,Dog Person,Windows,With Others,Star Wars,No,Yes,Yes,10,13,1,0,0,No,Less than 30 Years Old
+14556444,,,,,,1/3/19 2:09,1/3/19 2:16,0:07:00,100.36.64.50,Adventure,Dog Person,Mac,Individual (On my own),Star Wars,Yes,No,Yes,2,45,8,8,7,No,30 to 45 Years Old
+14556449,,,,,,1/3/19 2:16,1/3/19 2:19,0:03:00,54.165.50.91,Science Fiction,Dog Person,Windows,Individual (On my own),Star Trek,No,No,No,3,0,6,7,4,No,Over 45 Years Old
+14556451,,,,,,1/3/19 2:19,1/3/19 2:20,0:01:00,98.169.58.98,Science Fiction,Cat Person,Linux,With Others,Star Wars,Yes,No,Yes,8,4,2,1,4,Yes,Less than 30 Years Old
+14556455,,,,,,1/3/19 2:21,1/3/19 2:23,0:02:00,96.244.45.9,Comedy,Dog Person,Mac,With Others,Star Wars,No,No,No,3,20,5,10,3,No,30 to 45 Years Old
+14556463,,,,,,1/3/19 2:31,1/3/19 2:33,0:02:00,71.244.169.42,Adventure,Dog Person,Linux,With Others,Star Wars,No,No,No,2,20,20,15,5,No,30 to 45 Years Old
+14556465,,,,,,1/3/19 2:35,1/3/19 2:37,0:02:00,100.16.239.50,Comedy,Dog Person,Windows,With Others,Star Wars,No,No,Yes,10,1,1,3,1,Yes,30 to 45 Years Old
+14556474,,,,,,1/3/19 2:41,1/3/19 2:45,0:04:00,100.16.135.221,Comedy,Dog Person,Windows,Individual (On my own),Star Wars,No,No,No,4,20,10,10,3,Yes,30 to 45 Years Old
+14556487,,,,,,1/3/19 2:49,1/3/19 2:53,0:04:00,69.250.72.211,Science Fiction,Dog Person,Windows,With Others,Star Trek,No,No,Yes,5,25,14,3,5,Yes,Over 45 Years Old
+14556491,,,,,,1/3/19 2:56,1/3/19 2:59,0:03:00,100.15.164.231,Comedy,Dog Person,Android,Individual (On my own),Star Wars,No,No,No,4,0,1,4,10,No,30 to 45 Years Old
+14556499,,,,,,1/3/19 3:07,1/3/19 3:09,0:02:00,68.134.187.53,Comedy,Dog Person,Android,With Others,Star Wars,No,No,No,9,0,3,4,20,No,30 to 45 Years Old
+14556520,,,,,,1/3/19 3:24,1/3/19 3:26,0:02:00,100.16.28.117,Comedy,Dog Person,Windows,With Others,Star Wars,No,No,No,3,5,2,0,3,No,Less than 30 Years Old
+14556523,,,,,,1/3/19 3:27,1/3/19 3:31,0:04:00,68.134.8.22,Comedy,Cat Person,Mac,With Others,Star Trek,No,No,No,25,4,4,6,0,Yes,Less than 30 Years Old
+14556534,,,,,,1/3/19 3:39,1/3/19 3:39,0:00:00,73.133.67.115,Adventure,Dog Person,Mac,With Others,Star Trek,No,No,Yes,6,30,10,1,3,Yes,Less than 30 Years Old
+14556572,,,,,,1/3/19 4:04,1/3/19 4:07,0:03:00,100.16.225.153,Romance,Dog Person,Linux,With Others,Star Wars,No,No,Yes,1,40,4,10,0,No,Over 45 Years Old
+14556808,,,,,,1/3/19 8:03,1/3/19 8:06,0:03:00,68.134.12.75,Comedy,Dog Person,Windows,Individual (On my own),Star Trek,No,No,No,3,50,6,6,8,No,30 to 45 Years Old
+14557187,,,,,,1/3/19 12:18,1/3/19 12:19,0:01:00,173.66.201.108,Adventure,Cat Person,IOS,With Others,Star Wars,Yes,No,Yes,12,0,4,1,7,No,Over 45 Years Old
+14557261,,,,,,1/3/19 13:02,1/3/19 13:04,0:02:00,193.37.253.110,Science Fiction,Dog Person,Linux,With Others,Star Wars,No,Yes,Yes,3,40,7,5,10,Yes,30 to 45 Years Old
+14557288,,,,,,1/3/19 13:23,1/3/19 13:24,0:01:00,96.234.210.214,Science Fiction,Dog Person,Windows,With Others,Star Trek,No,Yes,No,10,25,5,24,30,Yes,30 to 45 Years Old
+14557304,,,,,,1/3/19 13:41,1/3/19 13:42,0:01:00,64.125.71.178,Adventure,Dog Person,Android,With Others,Star Wars,No,No,No,8,0,4,1,5,Yes,Over 45 Years Old
+14557339,,,,,,1/3/19 13:59,1/3/19 14:00,0:01:00,71.121.228.146,Science Fiction,Dog Person,Windows,Individual (On my own),Star Wars,Yes,No,No,12,30,0,2,5,Yes,30 to 45 Years Old
+14557352,,,,,,1/3/19 14:05,1/3/19 14:07,0:02:00,73.212.40.113,Comedy,Cat Person,Windows,With Others,Star Wars,No,No,No,4,10,10,0,5,No,30 to 45 Years Old
+14557398,,,,,,1/3/19 14:30,1/3/19 14:31,0:01:00,,Science Fiction,Cat Person,Mac,With Others,Star Wars,No,No,No,4,20,2,3,2,No,30 to 45 Years Old
+14557408,,,,,,1/3/19 14:36,1/3/19 14:38,0:02:00,73.173.144.92,Comedy,Cat Person,Linux,With Others,Star Wars,No,No,Yes,8,10,4,5,8,No,30 to 45 Years Old
+14557432,,,,,,1/3/19 14:49,1/3/19 14:50,0:01:00,,Science Fiction,Dog Person,Windows,With Others,Star Trek,No,No,Yes,8,25,4,0,2,Yes,30 to 45 Years Old
+14557475,,,,,,1/3/19 15:10,1/3/19 15:13,0:03:00,108.28.196.44,Science Fiction,Dog Person,Linux,Individual (On my own),Star Trek,No,No,Yes,5,20,4,12,37,Yes,Over 45 Years Old
+14557530,,,,,,1/3/19 15:41,1/3/19 15:43,0:02:00,,Science Fiction,Dog Person,Windows,With Others,Star Wars,No,No,No,6,50,0,8,4,No,Less than 30 Years Old
+14557548,,,,,,1/3/19 14:30,1/3/19 15:52,1:22:00,128.29.43.2,Science Fiction,Dog Person,Linux,With Others,Star Trek,Yes,No,Yes,4,8,2,20,5,Yes,Over 45 Years Old
+14557549,,,,,,1/3/19 15:48,1/3/19 15:52,0:04:00,209.83.111.211,Adventure,Dog Person,Linux,With Others,Star Wars,No,Yes,Yes,8,10,5,20,5,Yes,Over 45 Years Old
+14557593,,,,,,1/3/19 16:00,1/3/19 16:06,0:06:00,65.216.236.226,Romance,Cat Person,Linux,Individual (On my own),Star Trek,No,Yes,Yes,12,8,0,10,3,No,Over 45 Years Old
+14557610,,,,,,1/3/19 16:15,1/3/19 16:16,0:01:00,162.129.251.19,Science Fiction,Dog Person,Windows,With Others,Star Wars,No,No,Yes,6,4,7,5,10,No,30 to 45 Years Old
+14557624,,,,,,1/3/19 16:29,1/3/19 16:30,0:01:00,,Science Fiction,Cat Person,Linux,With Others,Star Wars,No,No,No,15,25,10,5,6,Yes,Less than 30 Years Old
+14557716,,,,,,1/3/19 17:20,1/3/19 17:21,0:01:00,50.205.199.122,Comedy,Cat Person,Android,With Others,Star Trek,No,Yes,No,2,0,4,1,6,Yes,30 to 45 Years Old
+14557824,,,,,,1/3/19 18:29,1/3/19 18:31,0:02:00,128.244.87.102,Science Fiction,Cat Person,Windows,Individual (On my own),Star Wars,No,No,No,10,25,12,4,1,No,Less than 30 Years Old
+14557856,,,,,,1/3/19 18:43,1/3/19 18:44,0:01:00,208.44.206.101,Romance,Cat Person,IOS,With Others,Star Trek,Yes,No,No,4,0,5,10,3,No,Over 45 Years Old
+14558008,,,,,,1/3/19 20:16,1/3/19 20:19,0:03:00,100.16.96.136,Comedy,Dog Person,Mac,With Others,Star Wars,No,No,No,7,3,6,0,2,No,Less than 30 Years Old
+14558023,,,,,,1/3/19 20:42,1/3/19 20:43,0:01:00,167.201.241.175,Adventure,Dog Person,Windows,Individual (On my own),Star Trek,No,Yes,Yes,4,0,3.5,0,4,No,30 to 45 Years Old
+14558032,,,,,,1/3/19 20:57,1/3/19 20:59,0:02:00,100.16.60.156,Comedy,Dog Person,Windows,With Others,Star Trek,No,No,No,20,40,5,5,0,No,Over 45 Years Old
+14558253,,,,,,1/4/19 1:41,1/4/19 1:42,0:01:00,98.117.212.243,Horror,Dog Person,Windows,Individual (On my own),Star Wars,Yes,No,Yes,8,50,2,4,4,Yes,30 to 45 Years Old
+14559040,,,,,,1/4/19 14:53,1/4/19 14:54,0:01:00,198.207.25.242,Comedy,Dog Person,Windows,Individual (On my own),Star Wars,No,No,No,4,0,2,4,5,No,Over 45 Years Old
+14559373,,,,,,1/4/19 17:49,1/4/19 17:52,0:03:00,,Science Fiction,Dog Person,Mac,Individual (On my own),Star Trek,No,Yes,Yes,14,20,1,8,0,No,Over 45 Years Old
+14559595,,,,,,1/4/19 18:58,1/4/19 20:35,1:37:00,73.129.112.204,Adventure,Dog Person,Linux,Individual (On my own),Star Wars,Yes,Yes,Yes,10,1,5,10,2,Yes,30 to 45 Years Old
+14560047,,,,,,1/5/19 6:22,1/5/19 6:26,0:04:00,,Comedy,Dog Person,Linux,Individual (On my own),Star Wars,No,Yes,No,4,2,2,4,7,Yes,Less than 30 Years Old
+14562556,,,,,,1/7/19 1:03,1/7/19 1:05,0:02:00,,Comedy,Dog Person,Mac,With Others,Star Wars,No,No,Yes,8,20,5,1,6,Yes,30 to 45 Years Old
+14564892,,,,,,1/7/19 21:55,1/7/19 21:57,0:02:00,167.102.188.198,Adventure,Dog Person,Windows,With Others,Star Wars,No,No,No,30,0,5,15,3,No,30 to 45 Years Old
+14564915,,,,,,1/7/19 22:27,1/7/19 22:29,0:02:00,68.134.31.252,Adventure,Cat Person,Linux,With Others,Star Trek,Yes,Yes,Yes,4,60,6,20,2,Yes,Over 45 Years Old
+14566938,,,,,,1/8/19 17:33,1/8/19 17:34,0:01:00,64.125.71.178,Science Fiction,Dog Person,Windows,With Others,Star Wars,Yes,No,No,8,20,5,0,10,No,30 to 45 Years Old
+14567643,,,,,,1/9/19 1:01,1/9/19 1:03,0:02:00,,Adventure,Dog Person,Windows,Individual (On my own),Star Wars,No,No,No,3,0,0,6,2,Yes,30 to 45 Years Old
+14569825,,,,,,1/10/19 1:03,1/10/19 1:05,0:02:00,108.48.164.115,Science Fiction,Dog Person,Mac,Individual (On my own),Star Trek,No,No,No,10,10,3.5,2,0,Yes,Less than 30 Years Old
+14571736,,,,,,1/10/19 20:31,1/10/19 20:38,0:07:00,64.125.71.178,Romance,Cat Person,IOS,Individual (On my own),Star Trek,No,Yes,No,6,0,0,4,0,No,Over 45 Years Old
+14573834,,,,,,1/12/19 3:58,1/12/19 4:02,0:04:00,68.134.125.74,Romance,Dog Person,Linux,With Others,Star Wars,No,Yes,No,3,2,3,10,25,No,Over 45 Years Old
+14574627,,,,,,1/12/19 21:05,1/12/19 21:07,0:02:00,199.68.233.2,Comedy,Dog Person,Windows,With Others,Star Wars,Yes,No,No,12,5,5,22,24,No,30 to 45 Years Old
+14574674,,,,,,1/13/19 0:42,1/13/19 0:45,0:03:00,68.134.37.69,Adventure,Dog Person,Linux,Individual (On my own),Star Wars,No,No,No,4,2,3,1,4,No,30 to 45 Years Old
+14575512,,,,,,1/13/19 13:28,1/13/19 13:30,0:02:00,,Science Fiction,Dog Person,Linux,Individual (On my own),Star Trek,Yes,No,Yes,12,30,5,12,25,Yes,30 to 45 Years Old
+14575639,,,,,,1/13/19 17:47,1/13/19 17:48,0:01:00,,Comedy,Dog Person,Mac,Individual (On my own),Star Wars,Yes,No,No,12,1,7,3,15,No,30 to 45 Years Old
+14575763,,,,,,1/13/19 23:54,1/13/19 23:55,0:01:00,,Comedy,Dog Person,Windows,Individual (On my own),Star Wars,No,No,No,10,5,4,0,5,No,Less than 30 Years Old
+14577294,,,,,,1/14/19 18:21,1/14/19 18:22,0:01:00,173.67.46.154,Adventure,Dog Person,Windows,Individual (On my own),Star Wars,Yes,No,Yes,12,6,2,1,3,Yes,Less than 30 Years Old
+14577512,,,,,,1/14/19 21:09,1/14/19 21:11,0:02:00,,Comedy,Dog Person,Windows,With Others,Star Wars,No,No,No,5,0,6,18,4,Yes,30 to 45 Years Old
+14577544,,,,,,1/14/19 21:53,1/14/19 21:55,0:02:00,64.125.71.178,Adventure,Dog Person,Windows,Individual (On my own),Star Wars,No,No,Yes,4,1,3,0,2,No,Over 45 Years Old
+14577690,,,,,,1/15/19 1:21,1/15/19 1:22,0:01:00,68.134.1.209,Adventure,Dog Person,Mac,Individual (On my own),Star Wars,No,No,No,10,5,3,2,13,No,30 to 45 Years Old
+14579182,,,,,,1/15/19 15:42,1/15/19 15:45,0:03:00,8.44.100.11,Adventure,Dog Person,Linux,With Others,Star Trek,No,Yes,No,10,3,2,5,2,Yes,30 to 45 Years Old
+14580113,,,,,,1/15/19 20:35,1/15/19 20:37,0:02:00,96.244.139.195,Science Fiction,Dog Person,Linux,Individual (On my own),Star Wars,No,No,No,14,20,2,5,5,No,30 to 45 Years Old
+14580332,,,,,,1/16/19 0:31,1/16/19 0:34,0:03:00,107.77.241.2,Adventure,Dog Person,Android,Individual (On my own),Star Wars,No,Yes,No,1,1,9,1,2,No,Less than 30 Years Old

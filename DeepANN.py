@@ -5,18 +5,18 @@ import numpy as np
 import pandas as pd
 import sklearn
 
-X = np.load('data/MLindependent.npy')
+X = np.load('data/MLindependent.npy',allow_pickle = True)
 inputDim = X.shape[1]
 
-y = np.load('data/MLdependent.npy')
+y = np.load('data/MLdependent.npy',allow_pickle = True)
 #y = y.tolist()
 
 y = y.reshape(len(y),)
 y = y.astype(int)
 
-XNames = np.load('data/MLindependentNames.npy')
+XNames = np.load('data/MLindependentNames.npy',allow_pickle = True)
 #inputDim = len(XNames)
-yNames = np.load('data/MLdependentNames.npy')
+yNames = np.load('data/MLdependentNames.npy',allow_pickle = True)
 outputDim = len(yNames)
 
 # Splitting the dataset into the Training set and Test set

@@ -1,0 +1,76 @@
+ WARN [2019-01-07 23:20:04,665] ({main} ZeppelinConfiguration.java[create]:117) - Failed to load configuration, proceeding with a default
+ INFO [2019-01-07 23:20:04,686] ({main} ZeppelinConfiguration.java[create]:129) - Server Host: 0.0.0.0
+ INFO [2019-01-07 23:20:04,686] ({main} ZeppelinConfiguration.java[create]:131) - Server Port: 8080
+ INFO [2019-01-07 23:20:04,686] ({main} ZeppelinConfiguration.java[create]:135) - Context Path: /
+ INFO [2019-01-07 23:20:04,688] ({main} ZeppelinConfiguration.java[create]:136) - Zeppelin Version: 0.8.0
+ INFO [2019-01-07 23:20:04,698] ({main} Log.java[initialized]:186) - Logging initialized @250ms
+ INFO [2019-01-07 23:20:04,741] ({main} ZeppelinServer.java[setupWebAppContext]:387) - ZeppelinServer Webapp path: /zeppelin/webapps
+ INFO [2019-01-07 23:20:04,784] ({main} ZeppelinServer.java[main]:213) - Starting zeppelin server
+ INFO [2019-01-07 23:20:04,785] ({main} Server.java[doStart]:327) - jetty-9.2.15.v20160210
+ INFO [2019-01-07 23:20:06,161] ({main} StandardDescriptorProcessor.java[visitServlet]:297) - NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+ WARN [2019-01-07 23:20:06,185] ({main} ServletHolder.java[getNameOfJspClass]:923) - Unable to make identifier for jsp rest trying rest instead
+ WARN [2019-01-07 23:20:06,372] ({main} ZeppelinConfiguration.java[getConfigFSDir]:527) - zeppelin.config.fs.dir is not specified, fall back to local conf directory zeppelin.conf.dir
+ WARN [2019-01-07 23:20:06,372] ({main} ZeppelinConfiguration.java[getConfigFSDir]:527) - zeppelin.config.fs.dir is not specified, fall back to local conf directory zeppelin.conf.dir
+ INFO [2019-01-07 23:20:06,422] ({main} InterpreterSettingManager.java[<init>]:163) - Using RecoveryStorage: org.apache.zeppelin.interpreter.recovery.NullRecoveryStorage
+ INFO [2019-01-07 23:20:06,422] ({main} InterpreterSettingManager.java[<init>]:167) - Using LifecycleManager: org.apache.zeppelin.interpreter.lifecycle.NullLifecycleManager
+ INFO [2019-01-07 23:20:06,439] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: spark
+ INFO [2019-01-07 23:20:06,442] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: jdbc
+ INFO [2019-01-07 23:20:06,444] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: groovy
+ INFO [2019-01-07 23:20:06,446] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: hbase
+ INFO [2019-01-07 23:20:06,448] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: cassandra
+ INFO [2019-01-07 23:20:06,450] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: kylin
+ INFO [2019-01-07 23:20:06,451] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: python
+ INFO [2019-01-07 23:20:06,452] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: sh
+ INFO [2019-01-07 23:20:06,454] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: flink
+ INFO [2019-01-07 23:20:06,455] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: pig
+ INFO [2019-01-07 23:20:06,456] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: elasticsearch
+ INFO [2019-01-07 23:20:06,457] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: sap
+ INFO [2019-01-07 23:20:06,458] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: alluxio
+ INFO [2019-01-07 23:20:06,459] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: ignite
+ INFO [2019-01-07 23:20:06,460] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: md
+ INFO [2019-01-07 23:20:06,495] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: neo4j
+ INFO [2019-01-07 23:20:06,496] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: angular
+ INFO [2019-01-07 23:20:06,497] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: file
+ WARN [2019-01-07 23:20:06,523] ({main} InterpreterSettingManager.java[init]:329) - No interpreter-setting.json found in /zeppelin/interpreter/scio
+ WARN [2019-01-07 23:20:06,524] ({main} InterpreterSettingManager.java[init]:329) - No interpreter-setting.json found in /zeppelin/interpreter/lib
+ WARN [2019-01-07 23:20:06,525] ({main} InterpreterSettingManager.java[init]:329) - No interpreter-setting.json found in /zeppelin/interpreter/${interpreter.name}
+ INFO [2019-01-07 23:20:06,526] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: bigquery
+ INFO [2019-01-07 23:20:06,528] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: livy
+ INFO [2019-01-07 23:20:06,529] ({main} InterpreterSettingManager.java[registerInterpreterSetting]:423) - Register InterpreterSettingTemplate: lens
+ WARN [2019-01-07 23:20:06,529] ({main} LocalConfigStorage.java[loadInterpreterSettings]:60) - Interpreter Setting file /zeppelin/conf/interpreter.json is not existed
+ INFO [2019-01-07 23:20:06,542] ({main} LocalConfigStorage.java[save]:53) - Save Interpreter Setting to /zeppelin/conf/interpreter.json
+ INFO [2019-01-07 23:20:06,605] ({main} VfsLog.java[info]:138) - Using "/tmp/vfs_cache" as temporary files store.
+ INFO [2019-01-07 23:20:06,634] ({main} GitNotebookRepo.java[<init>]:64) - Opening a git repo at '/notebook'
+ INFO [2019-01-07 23:20:07,908] ({main} GitNotebookRepo.java[<init>]:67) - Git repo /notebook/.git does not exist, creating a new one
+ INFO [2019-01-07 23:20:18,572] ({main} NotebookRepoSync.java[<init>]:77) - Instantiate NotebookRepo: org.apache.zeppelin.notebook.repo.GitNotebookRepo
+ WARN [2019-01-07 23:20:18,648] ({main} NotebookAuthorization.java[getInstance]:86) - Notebook authorization module was called without initialization, initializing with default configuration
+ WARN [2019-01-07 23:20:18,648] ({main} LocalConfigStorage.java[loadNotebookAuthorization]:77) - NotebookAuthorization file /zeppelin/conf/notebook-authorization.json is not existed
+ INFO [2019-01-07 23:20:18,648] ({main} Credentials.java[loadFromFile]:121) - /zeppelin/conf/credentials.json
+ INFO [2019-01-07 23:20:18,667] ({main} StdSchedulerFactory.java[instantiate]:1184) - Using default implementation for ThreadExecutor
+ INFO [2019-01-07 23:20:18,668] ({main} SimpleThreadPool.java[initialize]:268) - Job execution threads will use class loader of thread: main
+ INFO [2019-01-07 23:20:18,675] ({main} SchedulerSignalerImpl.java[<init>]:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ INFO [2019-01-07 23:20:18,676] ({main} QuartzScheduler.java[<init>]:240) - Quartz Scheduler v.2.2.1 created.
+ INFO [2019-01-07 23:20:18,676] ({main} RAMJobStore.java[initialize]:155) - RAMJobStore initialized.
+ INFO [2019-01-07 23:20:18,677] ({main} QuartzScheduler.java[initialize]:305) - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ INFO [2019-01-07 23:20:18,677] ({main} StdSchedulerFactory.java[instantiate]:1339) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ INFO [2019-01-07 23:20:18,677] ({main} StdSchedulerFactory.java[instantiate]:1343) - Quartz scheduler version: 2.2.1
+ INFO [2019-01-07 23:20:18,677] ({main} QuartzScheduler.java[start]:575) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ INFO [2019-01-07 23:20:19,530] ({main} Notebook.java[<init>]:126) - Notebook indexing started...
+ INFO [2019-01-07 23:20:19,540] ({main} LuceneSearch.java[addIndexDocs]:305) - Indexing 0 notebooks took 9ms
+ INFO [2019-01-07 23:20:19,540] ({main} Notebook.java[<init>]:128) - Notebook indexing finished: 0 indexed in 0s
+ INFO [2019-01-07 23:20:19,541] ({main} Helium.java[loadConf]:103) - Add helium local registry /zeppelin/helium
+ INFO [2019-01-07 23:20:19,541] ({main} Helium.java[loadConf]:100) - Add helium online registry https://s3.amazonaws.com/helium-package/helium.json
+ WARN [2019-01-07 23:20:19,543] ({main} Helium.java[loadConf]:111) - /zeppelin/conf/helium.json does not exists
+ INFO [2019-01-07 23:20:21,974] ({main} ContextHandler.java[doStart]:744) - Started o.e.j.w.WebAppContext@70beb599{/,file:/zeppelin/webapps/webapp/,AVAILABLE}{/zeppelin/zeppelin-web-0.8.0.war}
+ INFO [2019-01-07 23:20:21,979] ({main} AbstractConnector.java[doStart]:266) - Started ServerConnector@35c64e2a{HTTP/1.1}{0.0.0.0:8080}
+ INFO [2019-01-07 23:20:21,979] ({main} Server.java[doStart]:379) - Started @17533ms
+ INFO [2019-01-07 23:20:21,979] ({main} ZeppelinServer.java[main]:223) - Done, zeppelin server started
+ WARN [2019-01-07 23:24:37,357] ({qtp1458849419-41} SecurityRestApi.java[ticket]:88) - {"status":"OK","message":"","body":{"principal":"anonymous","ticket":"anonymous","roles":"[]"}}
+ INFO [2019-01-07 23:24:37,514] ({qtp1458849419-15} NotebookServer.java[onOpen]:150) - New connection from 192.168.2.50 : 52256

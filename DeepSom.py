@@ -7,6 +7,12 @@ import pandas as pd
 X = np.load('data/MLindependent.npy',allow_pickle = True)
 XNames = np.load('data/MLindependentNames.npy',allow_pickle = True)
 
+# Feature Scaling
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+X = sc.fit_transform(X)
+
+
 # Training the SOM
 from minisom import MiniSom
 som = MiniSom(x = 10, y = 10, input_len = len(XNames), sigma = 1.0, learning_rate = 0.5)

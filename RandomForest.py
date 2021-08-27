@@ -20,19 +20,37 @@ yNames = np.load('data/MLdependentNames.npy',allow_pickle = True)
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)
 
+# Feature Scaling
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+X_train = sc.fit_transform(X_train)
+X_test = sc.transform(X_test)
+
+
 # Fitting classifier to the Training set
 from sklearn.ensemble import RandomForestClassifier
 classifier = RandomForestClassifier(n_estimators = 10,criterion = 'entropy', random_state = 0)
 #classifier.fit(X_train, np.ravel(y_train))
 classifier.fit(X_train, y_train)
 # Predicting the Test set results
+
+# Fitting for traning
+
+y_pred = classifier.predict(X_train)
+# Making the Confusion Matrix
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_train, y_train)
+print(cm)
+#Percent correct
+print("TRAINING PERFORMANCE: ",(cm[0,0]+cm[1,1])/sum(sum(cm)))
+
 y_pred = classifier.predict(X_test)
 
 # Making the Confusion Matrix
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 #Percent correct
-print((cm[0,0]+cm[1,1])/sum(sum(cm)))
+print("TEST PREFORMANCE: ",(cm[0,0]+cm[1,1])/sum(sum(cm)))
 
 
 # Visualising the Training set results

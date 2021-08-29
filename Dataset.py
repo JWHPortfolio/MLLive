@@ -4,6 +4,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 import pickle
+import copy
 
 class Dataset:
     def __init__(self):
@@ -48,6 +49,8 @@ class Dataset:
             try:
                 #test to see if it is an integer
                 int(dataset[:,i][0])
+                # Do not run onehotencoder on this
+                catFeatures.update({i:0})
             # Not an integer
             except ValueError:
                 #determine length
@@ -57,22 +60,40 @@ class Dataset:
                     catFeatures.update({i:len(set(dataset[:,i]))})
                 else:
                     dataset[:,i] = labelencoder.fit_transform(dataset[:,i]) 
+                    catFeatures.update({i:0})
 
         catFeaturesArray = []
         #print("Features: ", catFeatures.items())
-        #for key, value in catFeatures.items():
-            #print("**Features - Key: ", key, " Value: ", value)
-            #catFeaturesArray.append(key)
-        onehotencoder = OneHotEncoder()
-        dataset = onehotencoder.fit_transform(dataset).toarray()
-
-        #must delete one column for each categorical data set
-        delCol = 0
+        datasetFinal = copy.deepcopy(dataset)
         for key, value in catFeatures.items():
-            dataset = np.delete(dataset, delCol, 1)
+            if(value == 0):
+                continue
+            print("**Features - Key: ", key, " Value: ", value)
+            print("**SHAPE: ", dataset.shape, " SHAPE2: ", dataset[:,key].shape)
+            catFeaturesArray.append(key)
+            onehotencoder = OneHotEncoder()
+            #integer_encoded = integer_encoded.reshape(len(integer_encoded), 1)
+            integer_encoded = dataset[:,key].reshape(len(dataset[:,key]), 1)
+            datasetencode = onehotencoder.fit_transform(integer_encoded, value).toarray()
+            if( value > 2): #delete 1 column
+                datasetencode = np.delete(datasetencode, 0, 1)
+            print("Shape after: ", datasetencode.shape)
+            print(datasetencode)
+            # must delete the original column and add in this
+            datasetFinal = np.delete(datasetFinal, key, axis=1)
+            #dataset = np.concatenate([dataset, np.array([[1],[1]]).dot(datasetencode)], axis=1)
+            datasetFinal = np.column_stack((datasetFinal, datasetencode))
+            #np.concatenate(dataset, datasetencode, 1)
+            #np.append(dataset, datasetencode, 1)
+            
+        print("COMPLETED DATASET SHAPE: ", datasetFinal.shape)
+        #must delete one column for each categorical data set
+        #delCol = 0
+        #for key, value in catFeatures.items():
+            #dataset = np.delete(dataset, delCol, 1)
             #adjusts for the disappearing column from above
-            print("Removed 1 Column due to onehotencoder")
-            delCol += value -1
+            #print("Removed 1 Column due to onehotencoder")
+            #delCol += value -1
 
         # Must scale the data
         # Feature Scaling
@@ -90,9 +111,9 @@ class Dataset:
                 pickle.dump(sc, f, pickle.HIGHEST_PROTOCOL)
 
         #save data
-        print("Data Shape: ", dataset.shape)
+        print("Data Shape: ", datasetFinal.shape)
         fileName = filenameBase +".npy"
-        np.save(fileName, dataset)
+        np.save(fileName, datasetFinal)
         
         #save names
         fileName = filenameBase + "Names.npy"
@@ -108,7 +129,7 @@ class Dataset:
             #return dataset
         #else:
             #message = "Incorrect Data Copy"
-        return dataset
+        return datasetFinal
 
 
 # d = Dataset()

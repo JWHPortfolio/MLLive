@@ -85,7 +85,7 @@ for i, j in enumerate(np.unique(y_set)):
     plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
                 c = ListedColormap(('red', 'green'))(i), label = j)
 plt.title('Random Forest (Test set)')
-plt.xlabel('Age')
-plt.ylabel('Estimated Salary')
+plt.xlabel(XNames[0])
+plt.ylabel(XNames[1])
 plt.legend()
 plt.show()
